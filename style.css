@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* BASE */
+:root {
+  --color-primary-pale-blue: #e0e8ff;
+  --color-primary-bright-blue: #3829e0;
+  --color-primary-whtie: #fff;
+
+  --color-neutral-pale-blue: #f5f7ff;
+  --color-neutral-desaturated-blue: #7280a7;
+  --color-neutral-dark-blue: #1f2f56;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 1.4;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  display: inline-block;
+  color: var(--color-primary-bright-blue);
+  transition: all .25s;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: .7;
+}
+
+button {
+  display: block;
+  width: 100%;
+  font-family: 'Red Hat Display', sans-serif;
+  text-align: center;
+  background: none;
+  border: none;
+}
+
+/* TEXT */
+.text-lg {
+  font-size: 24px;
+}
+
+.text-md {
+  font-size: 16px;
+}
+
+.text-sm {
+ font-size: 14px;
+}
+
+.text-xsm {
+  font-size: 12px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+/* SPACING */
+.my-mb-md {
+  margin-bottom: 25px;
+}
+
+.my-mb-sm {
+  margin-bottom: 15px;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url('/images/pattern-background-desktop.svg') no-repeat;
+  background-color: var(--color-primary-pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.card {
+  width: 400px;
+  border-radius: 15px;
+  background-color: var(--color-primary-whtie);
+}
+
+.card-header .hero-img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-body {
+  padding: 30px 40px;
+}
+
+.card-body .summary .title {
+  color: var(--color-neutral-dark-blue);
+}
+
+.card-body .summary .description {
+  color: var(--color-neutral-desaturated-blue);
+}
+
+.card-body .plan-info :nth-child(1) {
+  grid-area: icon;
+  justify-self: center;
+}
+
+.card-body .plan-info :nth-child(2) {
+  grid-area: price;
+  justify-self: start;
+}
+
+.card-body .plan-info :nth-child(3) {
+  grid-area: link;
+  justify-self: center;
+}
+
+.card-body .plan-info {
+  display: grid;
+  grid-template-areas: "icon price price link";
+  align-items: center;
+  padding: 20px 10px;
+  background-color: var(--color-neutral-pale-blue);
+  border-radius: 10px;
+}
+
+.card-body .plan-info .price :nth-child(1) {
+  color: var(--color-neutral-dark-blue);
+}
+
+.card-body .plan-info .price :nth-child(2) {
+  color: var(--color-neutral-desaturated-blue);
+}
+
+.card-body .card-footer .btn {
+  padding: 15px 0;
+  border-radius: 10px;
+  background-color: var(--color-primary-bright-blue);
+  color: var(--color-neutral-pale-blue);
+  transition: all .25s;
+}
+
+.card-body .card-footer .btn:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.card-body .card-footer .btn-outline {
+  border-radius: 10px;
+  padding: 15px 0;
+  color: var(--color-neutral-desaturated-blue);
+  transition: all .25s;
+}
+
+.card-body .card-footer .btn-outline:hover {
+  cursor: pointer;
+  color: var(--color-neutral-dark-blue);
+}
+
+
+
