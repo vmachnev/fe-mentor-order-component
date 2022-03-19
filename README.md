@@ -8,8 +8,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/nft-card-solution-a8hsB2IJY)
-- Live Site URL: (https://fe-nft-card.netlify.app)
+- Solution URL: (https://www.frontendmentor.io/solutions/order-summary-component-solution-LgDxnXapY)
+- Live Site URL: (https://fe-order-summary.netlify.app)
 
 ## My process
 
